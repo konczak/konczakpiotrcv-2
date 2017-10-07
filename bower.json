@@ -1,0 +1,12 @@
+{
+  "name": "konczakpiotrcv-2",
+  "private": true,
+  "dependencies": {
+    "modernizr": "2.8.1",
+    "MDBootstrap": "4.4.1",
+    "bootstrap": "4.0.0-beta"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.8.0"
+  }
+}
