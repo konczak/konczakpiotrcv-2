@@ -19,7 +19,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/MDBootstrap/css/mdb.min.css" />
+  <link rel="stylesheet" href="/bower_components/MDBootstrap/css/mdb.min.css"/>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -145,39 +145,6 @@
 
         </div>
         <!--Grid column-->
-      </div>
-      <!--Grid row-->
-
-      <!--Grid row-->
-      <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-4 mb-5">
-          <i class="fa fa-camera-retro fa-4x orange-text"></i>
-          <h4 class="my-4 font-weight-bold">Experience</h4>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-            assumenda deleniti hic.</p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-4 mb-1">
-          <i class="fa fa-heart fa-4x orange-text"></i>
-          <h4 class="my-4 font-weight-bold">Happiness</h4>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-            assumenda deleniti hic.</p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-4 mb-1">
-          <i class="fa fa-bicycle fa-4x orange-text"></i>
-          <h4 class="my-4 font-weight-bold">Adventure</h4>
-          <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-            assumenda deleniti hic.</p>
-        </div>
-        <!--Grid column-->
-
       </div>
       <!--Grid row-->
 
@@ -388,18 +355,255 @@
       </h2>
 
       <!--Grid row-->
-      <div class="row d-flex justify-content-center mb-4">
-        <!--Grid column-->
-        <div class="col-md-8">
-          <!-- Description -->
-          <p class="grey-text">
-            Lore ipsum bla bla bla
-          </p>
-
+      <div class="row">
+        <div class="col-12">
+          <h4 class="my-4 font-weight-bold">Distribution</h4>
         </div>
         <!--Grid column-->
+        <div class="col-12">
+          <div class="progress my-2" style="height: 20px">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%; height: 20px;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+              60%
+            </div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 15%; height: 20px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+              15%
+            </div>
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 15%; height: 20px;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+              15%
+            </div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 10%; height: 20px;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+              10%
+            </div>
+          </div>
+        </div>
+        <!--Grid column-->
+        <div class="col-12">
+          <h4 class="d-inline"><span class="badge badge-primary m-2">backend</span></h4>
+          <h4 class="d-inline"><span class="badge badge-warning m-2">frontend</span></h4>
+          <h4 class="d-inline"><span class="badge badge-dark m-2">DevOps</span></h4>
+          <h4 class="d-inline"><span class="badge badge-success m-2">soft</span></h4>
+        </div>
       </div>
       <!--Grid row-->
+
+      <div class="row">
+        <div class="col-12">
+          <h4 class="my-4 font-weight-bold">Details</h4>
+          <table class="table table-striped">
+            <tbody>
+            <tr class="d-none">
+              <td colspan="3"><!--just to revert row strips--></td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold align-middle">backend</td>
+              <td>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Java</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Spring</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">SQL</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Hibernate</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Thymeleaf</span></h4>
+              </td>
+              <td class="align-middle"><a href="" onclick="showOtherSkills(this, 'skills-other-backend'); return false;">+ 51 others</a></td>
+            </tr>
+            <tr id="skills-other-backend" class="d-none">
+              <td colspan="3">
+                <span class="badge badge-pill badge-secondary">Apache CXF</span>
+                <span class="badge badge-pill badge-secondary">Apache HTTP Server</span>
+                <span class="badge badge-pill badge-secondary">Apache Tomcat 5/6/7/8</span>
+                <span class="badge badge-pill badge-secondary">EasyMock</span>
+                <span class="badge badge-pill badge-secondary">ElasticSearch</span>
+                <span class="badge badge-pill badge-secondary">Flyway</span>
+                <span class="badge badge-pill badge-secondary">Gradle</span>
+                <span class="badge badge-pill badge-secondary">Hibernate</span>
+                <span class="badge badge-pill badge-secondary">Hibernate Envers</span>
+                <span class="badge badge-pill badge-secondary">HSQLDB</span>
+                <span class="badge badge-pill badge-secondary">itext 5</span>
+                <span class="badge badge-pill badge-secondary">JaCoCo</span>
+                <span class="badge badge-pill badge-secondary">Java 6/7/8</span>
+                <span class="badge badge-pill badge-secondary">JGiven</span>
+                <span class="badge badge-pill badge-secondary">JMS</span>
+                <span class="badge badge-pill badge-secondary">joda-time</span>
+                <span class="badge badge-pill badge-secondary">jOOQ</span>
+                <span class="badge badge-pill badge-secondary">JPA 2</span>
+                <span class="badge badge-pill badge-secondary">jsonPath</span>
+                <span class="badge badge-pill badge-secondary">JSP</span>
+                <span class="badge badge-pill badge-secondary">JUnit</span>
+                <span class="badge badge-pill badge-secondary">LDAP</span>
+                <span class="badge badge-pill badge-secondary">Log4j</span>
+                <span class="badge badge-pill badge-secondary">Logback</span>
+                <span class="badge badge-pill badge-secondary">Maven</span>
+                <span class="badge badge-pill badge-secondary">Mockito</span>
+                <span class="badge badge-pill badge-secondary">MongoDB</span>
+                <span class="badge badge-pill badge-secondary">MS Exchange</span>
+                <span class="badge badge-pill badge-secondary">MS SQL Server 2000/2008R2</span>
+                <span class="badge badge-pill badge-secondary">MySQL</span>
+                <span class="badge badge-pill badge-secondary">Neo4j</span>
+                <span class="badge badge-pill badge-secondary">Postgres</span>
+                <span class="badge badge-pill badge-secondary">quartz</span>
+                <span class="badge badge-pill badge-secondary">scheduling</span>
+                <span class="badge badge-pill badge-secondary">Sitemesh 3</span>
+                <span class="badge badge-pill badge-secondary">Spring 3/4</span>
+                <span class="badge badge-pill badge-secondary">Spring boot 1.1/1.2/1.3/1.4/1.5</span>
+                <span class="badge badge-pill badge-secondary">Spring data</span>
+                <span class="badge badge-pill badge-secondary">Spring integration</span>
+                <span class="badge badge-pill badge-secondary">Spring MVC 3/4</span>
+                <span class="badge badge-pill badge-secondary">Spring REST docs</span>
+                <span class="badge badge-pill badge-secondary">Spring Security 3/4</span>
+                <span class="badge badge-pill badge-secondary">Sprint test</span>
+                <span class="badge badge-pill badge-secondary">SQL</span>
+                <span class="badge badge-pill badge-secondary">Struts 1</span>
+                <span class="badge badge-pill badge-secondary">Swagger 1</span>
+                <span class="badge badge-pill badge-secondary">T-SQL</span>
+                <span class="badge badge-pill badge-secondary">Thymeleaf 2</span>
+                <span class="badge badge-pill badge-secondary">togglz</span>
+                <span class="badge badge-pill badge-secondary">xPath</span>
+                <span class="badge badge-pill badge-secondary">YAML</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold align-middle">frontend</td>
+              <td>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">HTML5</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">JavaScript</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Angular</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Bootstrap</span></h4>
+              </td>
+              <td class="align-middle"><a href="" onclick="showOtherSkills(this, 'skills-other-frontend'); return false;">+ 26 others</a></td>
+            </tr>
+            <tr id="skills-other-frontend" class="d-none">
+              <td colspan="3">
+                <span class="badge badge-pill badge-secondary">AJAX</span>
+                <span class="badge badge-pill badge-secondary">Angular 4</span>
+                <span class="badge badge-pill badge-secondary">AngularJS</span>
+                <span class="badge badge-pill badge-secondary">AngularJS translate</span>
+                <span class="badge badge-pill badge-secondary">AngularJS ui-bootstrap</span>
+                <span class="badge badge-pill badge-secondary">AngularJS ui-router</span>
+                <span class="badge badge-pill badge-secondary">AngularJS x-editable</span>
+                <span class="badge badge-pill badge-secondary">Bootstrap 3/4</span>
+                <span class="badge badge-pill badge-secondary">Bootswatch</span>
+                <span class="badge badge-pill badge-secondary">bower</span>
+                <span class="badge badge-pill badge-secondary">Chart.js</span>
+                <span class="badge badge-pill badge-secondary">CSS 2/3</span>
+                <span class="badge badge-pill badge-secondary">FireBug</span>
+                <span class="badge badge-pill badge-secondary">Font awesome</span>
+                <span class="badge badge-pill badge-secondary">Grunt</span>
+                <span class="badge badge-pill badge-secondary">Gulp</span>
+                <span class="badge badge-pill badge-secondary">HTML 5</span>
+                <span class="badge badge-pill badge-secondary">Jasmine 2</span>
+                <span class="badge badge-pill badge-secondary">JavaScript</span>
+                <span class="badge badge-pill badge-secondary">jQuery</span>
+                <span class="badge badge-pill badge-secondary">Material Design</span>
+                <span class="badge badge-pill badge-secondary">momentJS</span>
+                <span class="badge badge-pill badge-secondary">node.js</span>
+                <span class="badge badge-pill badge-secondary">npm</span>
+                <span class="badge badge-pill badge-secondary">Selenium</span>
+                <span class="badge badge-pill badge-secondary">Yeoman</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold align-middle">other tools</td>
+              <td>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Docker</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Jenkins</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">JIRA</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Git</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">WireMock</span></h4>
+              </td>
+              <td class="align-middle"><a href="" onclick="showOtherSkills(this, 'skills-other-tools'); return false;">+ 44 others</a></td>
+            </tr>
+            <tr id="skills-other-tools" class="d-none">
+              <td colspan="3">
+                <span class="badge badge-pill badge-secondary">Amazon Web Services</span>
+                <span class="badge badge-pill badge-secondary">Autodesk/Autocad</span>
+                <span class="badge badge-pill badge-secondary">Bash</span>
+                <span class="badge badge-pill badge-secondary">Beyond Compare 3</span>
+                <span class="badge badge-pill badge-secondary">BitBucket</span>
+                <span class="badge badge-pill badge-secondary">Bugzilla</span>
+                <span class="badge badge-pill badge-secondary">CentOS</span>
+                <span class="badge badge-pill badge-secondary">Confluence</span>
+                <span class="badge badge-pill badge-secondary">Debian</span>
+                <span class="badge badge-pill badge-secondary">Docker</span>
+                <span class="badge badge-pill badge-secondary">Enterprise Architect</span>
+                <span class="badge badge-pill badge-secondary">GIMP</span>
+                <span class="badge badge-pill badge-secondary">Git</span>
+                <span class="badge badge-pill badge-secondary">GitHub</span>
+                <span class="badge badge-pill badge-secondary">Grafana</span>
+                <span class="badge badge-pill badge-secondary">Graphviz</span>
+                <span class="badge badge-pill badge-secondary">IntelliJ Ultimate</span>
+                <span class="badge badge-pill badge-secondary">Jenkins</span>
+                <span class="badge badge-pill badge-secondary">JIRA</span>
+                <span class="badge badge-pill badge-secondary">Linux</span>
+                <span class="badge badge-pill badge-secondary">MS Office</span>
+                <span class="badge badge-pill badge-secondary">MS SQL Server Management Studio</span>
+                <span class="badge badge-pill badge-secondary">MS Visio</span>
+                <span class="badge badge-pill badge-secondary">MS Windows XP/7/W10/Server 2008</span>
+                <span class="badge badge-pill badge-secondary">MySQL Workbench</span>
+                <span class="badge badge-pill badge-secondary">NetBeans</span>
+                <span class="badge badge-pill badge-secondary">Octopus Deploy</span>
+                <span class="badge badge-pill badge-secondary">Papercut</span>
+                <span class="badge badge-pill badge-secondary">pgAdmin</span>
+                <span class="badge badge-pill badge-secondary">PlantUML</span>
+                <span class="badge badge-pill badge-secondary">Postman</span>
+                <span class="badge badge-pill badge-secondary">Putty</span>
+                <span class="badge badge-pill badge-secondary">soapUI</span>
+                <span class="badge badge-pill badge-secondary">Sonar</span>
+                <span class="badge badge-pill badge-secondary">SourceTree</span>
+                <span class="badge badge-pill badge-secondary">Stash</span>
+                <span class="badge badge-pill badge-secondary">SVN</span>
+                <span class="badge badge-pill badge-secondary">Ubuntu</span>
+                <span class="badge badge-pill badge-secondary">UML</span>
+                <span class="badge badge-pill badge-secondary">winSCP</span>
+                <span class="badge badge-pill badge-secondary">WireMock</span>
+                <span class="badge badge-pill badge-secondary">Wireshark Protocol Analyser</span>
+                <span class="badge badge-pill badge-secondary">XML</span>
+                <span class="badge badge-pill badge-secondary">XSL</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold align-middle">methodologies</td>
+              <td>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">CI/CD</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">DDD</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Microservices</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">Security</span></h4>
+                <h4 class="d-inline"><span class="badge badge-pill badge-primary m-2">SCRUM</span></h4>
+              </td>
+              <td class="align-middle"><a href="" onclick="showOtherSkills(this, 'skills-other-methodologies'); return false;">+ 26 others</a></td>
+            </tr>
+            <tr id="skills-other-methodologies" class="d-none">
+              <td colspan="3">
+                <span class="badge badge-pill badge-secondary">Asynchronous</span>
+                <span class="badge badge-pill badge-secondary">Billing/Charging Systems</span>
+                <span class="badge badge-pill badge-secondary">Caching</span>
+                <span class="badge badge-pill badge-secondary">CI/CD</span>
+                <span class="badge badge-pill badge-secondary">Client/Server</span>
+                <span class="badge badge-pill badge-secondary">Code review</span>
+                <span class="badge badge-pill badge-secondary">Cryptography</span>
+                <span class="badge badge-pill badge-secondary">CVS</span>
+                <span class="badge badge-pill badge-secondary">Database transactions</span>
+                <span class="badge badge-pill badge-secondary">Design Patterns</span>
+                <span class="badge badge-pill badge-secondary">Domain Driven Design</span>
+                <span class="badge badge-pill badge-secondary">i18n</span>
+                <span class="badge badge-pill badge-secondary">JSON</span>
+                <span class="badge badge-pill badge-secondary">Microservices</span>
+                <span class="badge badge-pill badge-secondary">OAuth 2.0</span>
+                <span class="badge badge-pill badge-secondary">ORM</span>
+                <span class="badge badge-pill badge-secondary">PCI</span>
+                <span class="badge badge-pill badge-secondary">REST/RESTful</span>
+                <span class="badge badge-pill badge-secondary">SCRUM</span>
+                <span class="badge badge-pill badge-secondary">SOAP</span>
+                <span class="badge badge-pill badge-secondary">Sockets (IP)</span>
+                <span class="badge badge-pill badge-secondary">Software scalling</span>
+                <span class="badge badge-pill badge-secondary">Test Automation</span>
+                <span class="badge badge-pill badge-secondary">VPN (IPSEC)</span>
+                <span class="badge badge-pill badge-secondary">Web Services</span>
+                <span class="badge badge-pill badge-secondary">Web Sockets</span>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
     </section>
     <!--Section: Skills-->
