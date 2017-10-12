@@ -12,3 +12,8 @@ header,
     -o-background-size: cover;
     background-size: cover;
 }
+
+.top-nav-collapse {
+  background-color: #343a40;
+  transition: background-color 1s ease;
+}
