@@ -16,3 +16,25 @@ function scroll() {
 }
 
 $(window).scroll(scroll);
+
+new WOW().init();
+
+
+function startExploreHoverIn() {
+  $('#start-exploring').addClass('animated pulse infinite');
+};
+
+function startExploreHoverOut() {
+  $('#start-exploring').removeClass('animated pulse infinite');
+};
+
+$('#start-exploring').hover(startExploreHoverIn, startExploreHoverOut);
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
+
