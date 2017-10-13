@@ -17,6 +17,15 @@ function scroll() {
 
 $(window).scroll(scroll);
 
+$('section').each(function () {
+  var $this = $(this);
+
+  $this.addClass('wow fadeIn');
+
+  $this.attr('data-wow-delay', '0.2s')
+    .attr('data-wow-duration', '2s');
+});
+
 new WOW().init();
 
 
