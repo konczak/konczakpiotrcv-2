@@ -1,49 +1,56 @@
-function showOtherSkills(caller, otherSkillsId) {
-  document.getElementById(otherSkillsId)
-    .classList.remove('d-none');
-  caller.classList.add('disabled');
-}
+(function () {
+  function resizeNavbarAnimation() {
+    var $window = $(window),
+      navbar = $('nav');
 
-function scroll() {
-  var $window = $(window),
-    navbar = $('nav');
-
-  if ($window.scrollTop() > 0) {
-    navbar.addClass('top-nav-collapse');
-  } else {
-    navbar.removeClass('top-nav-collapse');
+    if ($window.scrollTop() > 0) {
+      navbar.addClass('top-nav-collapse');
+    } else {
+      navbar.removeClass('top-nav-collapse');
+    }
   }
-}
 
-$(window).scroll(scroll);
+  function startPulseOnHoverIn() {
+    $(this).addClass('animated pulse infinite');
+  };
 
-$('section').each(function () {
-  var $this = $(this);
+  function stopPulseOnHoverOut() {
+    $(this).removeClass('animated pulse infinite');
+  };
 
-  $this.addClass('wow fadeIn');
+  function showOtherSkills(event) {
+    event.preventDefault();
 
-  $this.attr('data-wow-delay', '0.2s')
-    .attr('data-wow-duration', '2s');
-});
+    var $this = $(this);
 
-new WOW().init();
+    const idOfOtherSkillsToShow = $this.attr('data-skills-other');
+    document.getElementById(idOfOtherSkillsToShow)
+      .classList.remove('d-none');
+    $this.classList.add('disabled');
+  };
 
+  function addEntranceAnimation() {
+    var $this = $(this);
 
-function startExploreHoverIn() {
-  $('#start-exploring').addClass('animated pulse infinite');
-};
+    $this.addClass('wow fadeIn');
 
-function startExploreHoverOut() {
-  $('#start-exploring').removeClass('animated pulse infinite');
-};
+    $this.attr('data-wow-delay', '0.2s')
+      .attr('data-wow-duration', '2s');
+  };
 
-$('#start-exploring').hover(startExploreHoverIn, startExploreHoverOut);
+  function scrollSmoothly(event) {
+    event.preventDefault();
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-  event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  };
 
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 500);
-});
+  $(document).on('click', 'a[data-skills-other]', showOtherSkills);
+  $(window).scroll(resizeNavbarAnimation);
+  $('section').each(addEntranceAnimation);
+  $('#start-exploring').hover(startPulseOnHoverIn, stopPulseOnHoverOut);
+  $(document).on('click', 'a[href^="#"]', scrollSmoothly);
 
+  new WOW().init();
+})();
